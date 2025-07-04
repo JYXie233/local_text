@@ -1,26 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:locale_text/locale_text.dart';
 
-class MainPage extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _MainPageState();
-  }
-}
-
-class _MainPageState extends State<MainPage> with LocaleTextDelegate {
-  int _count = 0;
-
-  @override
-  String get localePage => "主页面";
+class MainPage extends StatelessWidget {
+  const MainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: DelegateText(
-          '标题',
-        ),
+        title: Text('标题'.lt()),
       ),
       body: Column(
         children: [
@@ -33,11 +21,11 @@ class _MainPageState extends State<MainPage> with LocaleTextDelegate {
                       var localeTextProvider = LocaleTextProvider.of(context);
                       print('localeTextProvider:${localeTextProvider}');
                       return AlertDialog(
-                        title: DelegateText(
-                          "弹窗标题",
+                        title: Text("弹窗标题".lt(
+                          page: "",
                           category: "弹窗",
-                        ),
-                        content: DelegateText(
+                        )),
+                        content: LocaleText(
                           "语言已加载完成",
                           category: "弹窗",
                         ),
@@ -51,7 +39,7 @@ class _MainPageState extends State<MainPage> with LocaleTextDelegate {
                         ],
                       );
                     });
-                setState(() {});
+                // setState(() {});
               },
               child: DelegateText(
                 '重新加载语言',

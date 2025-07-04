@@ -8,8 +8,12 @@ extension LocalTextExtString on String {
   /// [page] 页面为空的话，组件必须包裹在LocaleTextProvider中或者LocaleTextApp中
   /// [category] 类别
   /// [locale] 本地化
-  String lt(List<String>? args,
-      {BuildContext? context, String? page, String? category, Locale? locale}) {
+  String lt(
+      {List<String>? args,
+      BuildContext? context,
+      String? page,
+      String? category,
+      Locale? locale}) {
     final LocaleTextProvider? localeTextProvider =
         context == null ? null : LocaleTextProvider.of(context);
     final InheritedLocaleTextApp? localeTextApp =

@@ -8,8 +8,10 @@ import 'main_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await LocaleTextStorage().init(
-      textUrl: 'http://192.168.0.108:5173/locale/text?appId=1',
-      styleUrl: 'http://192.168.0.108:5173/locale/style?appId=1',
+      // textUrl:
+      //     'https://language-worker.xietom96.workers.dev/locale/text?appId=1',
+      // styleUrl:
+      //     'https://language-worker.xietom96.workers.dev/locale/style?appId=1',
       textAssetsPath: "assets/text.json",
       styleAssetsPath: "assets/style.json");
   runApp(const MyApp());
@@ -33,15 +35,18 @@ class _MyAppState extends State<MyApp> {
     return LocaleTextApp(
         page: "公共",
         // locale: Locale.fromSubtags(languageCode: "zh", scriptCode: "Hant", countryCode: "CN"),
-        builder: (context, locale) => MaterialApp(
-              locale: locale,
-              localizationsDelegates: [
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-              ],
-              supportedLocales: [Locale("en", "US"), Locale("zh", "CN")],
-              home: MainPage(),
-            ));
+        builder: (context, locale) {
+          print("$this updateLocale:$locale");
+          return MaterialApp(
+            locale: locale,
+            localizationsDelegates: [
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: [Locale("en", "US"), Locale("zh", "CN")],
+            home: MainPage(),
+          );
+        });
   }
 }
