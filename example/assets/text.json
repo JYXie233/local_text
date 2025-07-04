@@ -1,0 +1,80 @@
+{
+    "主页面": {
+        "标题": {
+            "zh_Hant_CN": "標題",
+            "zh_Hans_CN": "标题",
+            "en_US": "Title"
+        },
+        "切换语言": {
+            "en_US": "Change Language",
+            "zh_Hans_CN": "切换语言",
+            "zh_Hant_CN": "切換語言"
+        },
+        "重新加载语言": {
+            "en_US": "Reload Language",
+            "zh_Hans_CN": "重新加载语言",
+            "zh_Hant_CN": "重新加載語言"
+        },
+        "文本": {
+            "en_US": "Ventricular tachycardia, abbreviated as VT, refers to the spontaneous occurrence of three or more consecutive abnormal ventricular beats in the special conduction system below the His bundle branches or in the ventricular muscle, with a frequency greater than 100 beats per minute. Ventricular tachycardia is a common rapid ventricular arrhythmia and is more frequently seen in patients with organic heart diseases such as coronary heart disease, valvular heart disease, cardiomyopathy, and heart failure.",
+            "zh_Hant_CN": "應充分休息適當活動，避免精神緊張，避免過度吸煙，飲酒、濃茶和咖啡等。 因阻滯的位置不同治療也不同。當阻滯區位於房室結者（如絕大多數的二度Ⅰ型房室傳導阻滯），通常不需治療，但需定期隨訪。當阻滯區位於希-浦系統內的二度Ⅰ型房室傳導阻滯，須積極治療原發病，去除誘因，以及對症處理。並應考慮心髒起搏治療。 如有症狀者，無論其阻滯區的位置如何，都應積極到醫院尋求專業醫生診斷， 並且通過藥物治療改善。",
+            "zh_Hans_CN": "二度Ⅱ型房室传\\n导阻滞是是激动自心房传至心室过程中有部分传导中断，即有心室脱漏现象。可同时伴有房室传导延迟，通常以心房搏动数与下传心室搏动数的比例(P:ORS)来表示阻滞的程度。二度Ⅱ型房室传导阻滞部位大多数在希氏-浦肯野氏纤维，病变范围较广泛。"
+        },
+        "第一段": {
+            "en_US": "First 1",
+            "zh_Hans_CN": "第一段%s是绿色的",
+            "zh_Hant_CN": "第一段是绿色的"
+        },
+        "第二段": {
+            "en_US": "Seconds.",
+            "zh_Hans_CN": "第二段是黄色的",
+            "zh_Hant_CN": "第二段是黄色的"
+        },
+        "第三段": {
+            "en_US": "Third",
+            "zh_Hans_CN": "第三段是黑色的",
+            "zh_Hant_CN": "第三段是黑色的"
+        },
+        "第四段": {
+            "en_US": "Four",
+            "zh_Hans_CN": "第四段是蓝色",
+            "zh_Hant_CN": "第四段是蓝色"
+        },
+        "弹窗": {
+            "弹窗标题": {
+                "en_US": "Dialog title",
+                "zh_Hans_CN": "提示",
+                "zh_Hant_CN": "提示"
+            },
+            "语言已加载完成": {
+                "en_US": "Languages loaded",
+                "zh_Hans_CN": "语言已加载完成",
+                "zh_Hant_CN": "语言已加载完成"
+            },
+            "好的": {
+                "en_US": "Confirm",
+                "zh_Hans_CN": "确定",
+                "zh_Hant_CN": "好的"
+            }
+        }
+    },
+    "公共": {
+        "弹窗": {
+            "弹窗标题": {
+                "en_US": "Tips",
+                "zh_Hans_CN": "提示",
+                "zh_Hant_CN": "提示"
+            },
+            "好的": {
+                "en_US": "Confirm",
+                "zh_Hans_CN": "好滴",
+                "zh_Hant_CN": "好的"
+            },
+            "语言已加载完成": {
+                "en_US": "All language loaded",
+                "zh_Hant_CN": "語言已加載完畢",
+                "zh_Hans_CN": "语言已加载完成"
+            }
+        }
+    }
+}
