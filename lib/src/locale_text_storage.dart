@@ -27,7 +27,8 @@ class LocaleTextStorage {
       String? textAssetsPath,
       String? styleAssetsPath,
       String? textUrl,
-      String? styleUrl}) async {
+      String? styleUrl,
+      bool reload = false}) async {
     _path = filePath ?? (await getApplicationCacheDirectory()).path;
     _textUrl = textUrl;
     _styleUrl = styleUrl;
@@ -38,6 +39,14 @@ class LocaleTextStorage {
     _styleFilePath = p.join(_path, 'style.json');
     File textFile = File(_textFilePath);
     File styleFile = File(_styleFilePath);
+    if (reload) {
+      if (await textFile.exists()) {
+        await textFile.delete();
+      }
+      if (await styleFile.exists()) {
+        await styleFile.delete();
+      }
+    }
     if (!(await textFile.exists())) {
       if (_textUrl != null) {
         _dio ??= Dio();
